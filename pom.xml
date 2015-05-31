@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.billybyte</groupId>
   <artifactId>web-clnt-access</artifactId>
-  <version>1.0</version>
+  <version>1.01</version>
   <build>
     <plugins>
 	    <plugin>
@@ -13,8 +13,22 @@
 	          <target>1.6</target>
         </configuration>
       </plugin>
+		<plugin>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-source-plugin</artifactId>
+		  <executions>
+		    <execution>
+		      <id>attach-sources</id>
+		      <goals>
+		        <goal>jar</goal>
+		      </goals>
+		    </execution>
+		  </executions>
+		</plugin> 
+      
     </plugins>
   </build>
+
 
 	<repositories>
 		<repository>
@@ -23,7 +37,6 @@
 		</repository>
 	</repositories>
   
-
  <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -34,7 +47,7 @@
  	<dependency>
 		<groupId>com.github.bgithub1</groupId>
 		<artifactId>collectionsstaticmethods</artifactId>
-		<version>1.0</version>
+		<version>1.01</version>
 	</dependency>
  </dependencies>
 
